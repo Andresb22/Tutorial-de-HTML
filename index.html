@@ -6,6 +6,7 @@
     <meta name="description" content="En esta pagina estamos aprendiendo HTML con el profe Marcos">
     <title>Repasando HTML</title>
     <link rel="icon" href="IMG/logo2.svg"><!--Agrega un icono en la pestaña del navegador-->
+    <link rel="apple-touch-icon" href="IMG/icon.png"><!--Agrega un icono en el celular-->
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 <body background="IMG/fondo1.jpg">
@@ -67,9 +68,9 @@
     <h3>Atributos dentro de un formulario</h3>
     <h4>Formulario login</h4>
     <form action="" target="_blank">
-        <input type="text" name="Usuario" placeholder="Ingrese tu usuario">
+        <input type="text" name="Usuario" placeholder="Ingresa tu usuario">
         <br>
-        <input type="password" name="contraseña" placeholder="Ingrese tu contraseña">
+        <input type="password" name="contraseña" placeholder="Ingresa tu contraseña">
         <input type="submit">
         <br>
         <input type="reset">
@@ -115,7 +116,18 @@
     </label>
     <input type="submit">
     <input type="reset">
-    
+    <hr>
+    <h4>Formulario de contacto</h4>
+    <form action="https://formsubmit.co/ac4272838@gmail.com" method="POST">
+        <input type="text" name="nombre"
+        placeholder="Escribe tu nombre"
+        title="El nombre solo acepta letras y espacios en blanco" required> <br>
+        <input type="text" name="correo"
+        placeholder="Escribe tu correo electrónico"
+        title="Formato de correo inválido" required><br>
+        <textarea name="comentarios" cols="30" rows="10"></textarea> <br>
+        <input type="submit">
+    </form>
     <hr>
     <h2 id="imagenes"><span style="background-color:coral">Imagenes</span></h2><!--Este se usa para subtitulos-->
     <img src="IMG/logo-html.png" alt="Logo de HTML">

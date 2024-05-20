@@ -28,6 +28,7 @@
     <li><a href="index.html#texto-codigo">Texto en formato de codigo</a></li>
     <li><a href="index.html#etiquetas-sematicas">Etiquetas semanticas estructurales</a></li>
     <li><a href="index.html#etiqueta-bloque-linea">Etiqueta de bloque vs Etiqueta de linea</a></li>
+    <li><a href="index.html#elementos-interactivos">Elementos Interactivos</a></li>
     <hr>
     <h2 id="formularios">Formularios</h2>
     <h3>Elementos de Formularios</h3>
@@ -42,12 +43,12 @@
     <input type="file"><br>
     <input type="file" multiple><br>
     <input type="hidden" name="Idioma" value="es"><br>
-    <input type="email"><br>
-    <input type="number"><br>
-    <input type="tel"><br>
-    <input type="password"><br>
-    <input type="search"><br>
-    <textarea cols="50" rows="5"></textarea><br>
+    <input type="email" placeholder="Correo electronico"><br>
+    <input type="number" placeholder="Ingrese un numero"><br>
+    <input type="tel" placeholder="Numero de telefono"><br>
+    <input type="password" placeholder="Ingrese su contraseña"><br>
+    <input type="search" placeholder="¿Que estas buscando?"><br>
+    <textarea cols="50" rows="5" placeholder="Ingrese un comentario"></textarea><br>
     <select name="" id="">
         <option value="">HTML</option>
         <option value="">CSS</option>
@@ -60,15 +61,15 @@
     </select><br>
     <a href="index.html#inicio">☝️</a>
     <h2 id="atributos-de-formularios">Atributo de los formularios</h2>
-    <input type="text" value="AndresBernado" readonly>
-    <input type="text" value="AndresBernado" disabled><br>
+    <input type="text" value="Andres Bernadó" readonly>
+    <input type="text" value="Andres Bernadó" disabled><br>
     <input type="text" placeholder="Escribe tu nombre"><br>
     <h3>Atributos dentro de un formulario</h3>
     <h4>Formulario login</h4>
     <form action="" target="_blank">
-        <input type="text" name="Usuario">
+        <input type="text" name="Usuario" placeholder="Ingrese tu usuario">
         <br>
-        <input type="password" name="contraseña">
+        <input type="password" name="contraseña" placeholder="Ingrese tu contraseña">
         <input type="submit">
         <br>
         <input type="reset">
@@ -88,8 +89,33 @@
         <input type="submit">
         <input type="reset">
     </form>
-
-
+    <br>
+    <p><b>Elige tu lenguaje de programación favorito</b></p>
+    <input type="radio" name="lenguaje" id="radio-js" value="js">
+    <label for="radio-js">JavaScript</label>
+    <input type="radio" name="lenguaje" id="radio-py" value="py">
+    <label for="radio-js">Python</label>
+    <input type="radio" name="lenguaje" id="radio-php" value="php">
+    <label for="radio-js">PHP</label>
+    <input type="submit">
+    <input type="reset">
+    <br>
+    <p>Elige tu interes:</p>
+    <label>
+        <input type="checkbox" name="intereses" id="educacion">
+        Educación
+    </label>
+    <label>
+        <input type="checkbox" name="intereses" id="tecnologia">
+        Tecnología
+    </label>
+    <label>
+        <input type="checkbox" name="intereses" id="deportes">
+        Deportes
+    </label>
+    <input type="submit">
+    <input type="reset">
+    
     <hr>
     <h2 id="imagenes"><span style="background-color:coral">Imagenes</span></h2><!--Este se usa para subtitulos-->
     <img src="IMG/logo-html.png" alt="Logo de HTML">
@@ -217,23 +243,39 @@
     <a href="index.html#inicio">☝️</a>
     <br>
     <h2 id="enlaces"><span style="background-color:chartreuse">Enlaces</span></h2>
-    <a href="probando-enlaces.html">Por aqui visito el nuevo documento</a><!--Enlaces a otro documento de mi pagina-->
+    <a href="probando-enlaces.html">👉 Por aqui visito el nuevo documento</a><!--Enlaces a otro documento de mi pagina-->
     <br>
     <br>
     <a href="https://lenguajehtml.com/" target="blank"
-    rel="nofollow">Aqui veras mas contenido de HTML</a><!--enlace a otro sitio wep-->
+    rel="nofollow">👉 Aqui veras mas contenido de HTML</a><!--enlace a otro sitio wep-->
     <br>
     <br>
     <a href="https://www.instagram.com/andress.b22/" target="_blank"><img src="img/instagram.png" alt="Esta imagen visita mi perfil" width="50" height="50"></a><!--Enlace con logo-->
     <br>
     <br>
-    <a href="mailto:ac4272838@gmail.com">Enlace a correo electronico</a>
+    <a href="mailto:ac4272838@gmail.com">👉 Enlace a correo electronico</a>
     <br>
-    <a href="tel:3834688582">Enlace a telefono</a>
+    <a href="tel:3834688582">👉 Enlace a telefono</a>
     <br>
-    <a href="https://api.whatsapp.com/send?phone=3834688582&text=Hola pude ingresar a tu pagina con exito">Enlace de Whatsapp</a>
+    <a href="https://api.whatsapp.com/send?phone=3834688582&text=Hola pude ingresar a tu pagina con exito">👉 Enlace de Whatsapp</a>
     <br>
     <a href="index.html#inicio">☝️</a>
+    <hr>
+    <h2 id="elementos-interactivos">Elementos Interactivos</h2>
+    <button onclick="alert('Hiciste click en el boton')">Este es un botón</button>
+    <br>
+    <br>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
+    <details>
+        <summary>Elementos interactivos "acordeon"</summary>
+        <article>
+            <h3>Contenido del acordeón</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aperiam. Minus recusandae aspernatur, aut tempora perspiciatis impedit ipsa placeat fugiat! Eaque odio, dolore voluptatem ratione nostrum atque. Similique, adipisci aut!</p>
+            <img src="IMG/gtrr34.jpg" alt="GTR R34">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut minus cupiditate unde totam nulla mollitia expedita, nihil magnam odio consequatur nemo modi! Quam non iste deleniti illo rerum autem sit.</p>
+        </article>
+    </details>
     <hr>
     <p id="texto-codigo">
         <code>Este texto está en formato codigo</code>

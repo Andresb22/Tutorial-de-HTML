@@ -4,5 +4,27 @@ h2{
 }
 a{
     background: rgb(215,85,10);
-    display: block;
+    /* display: block; */
+}
+button{
+    background: #630606;
+    color: azure;
+}
+button:hover{
+    background: #051367;
+}
+.columnas{
+    background: #008e89;
+    padding: 20px;
+}
+.columna{
+    background:#79d2a7;
+    padding: 15px;
+    color: azure;
+    width: 25%;
+    margin: 10px;
+}
+.contenedor-padre{
+    display: flex;
+    
 }
